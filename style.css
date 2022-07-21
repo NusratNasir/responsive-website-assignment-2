@@ -44,6 +44,16 @@ body{
     border-radius: 5px;
     color: white;
     font-weight: 500;
+    transition: all .3s;
+    display: inline-block;
+}
+.button:hover{
+    background-color: rgba(147, 8, 8, 0.703);
+    transform: scale(1.01);
+    box-shadow: 0 0 3px 3px rgba(255, 0, 0, 0.177);
+    font-size: 18px;
+    animation: color-change 2s linear infinite;
+    
 }
 .btn-hide{
     text-decoration: none;
@@ -54,8 +64,8 @@ body{
     font-weight: 500;
     width:100px;
     text-align: center;
-    display: block;
     margin: 0 auto;
+    display:none;
 }
 main{
     width: 80%;
@@ -144,13 +154,7 @@ a{
     column-gap: 50px;
     padding: 10px;
 }
-.post-btn{
-    width:120px;
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    display:none;
-}
+
 footer{
     width: 100%;
     padding: 50px;
@@ -255,7 +259,7 @@ footer p{
 }
 
 /* Desktop Screen */
-@media only screen and (min-width:993px) and (max-width:1312px) {
+@media only screen and (min-width:992px) and (max-width:1312px) {
     .btn-hide{
         display: none;
     }
